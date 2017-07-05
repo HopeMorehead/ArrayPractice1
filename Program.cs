@@ -77,50 +77,93 @@ namespace ArrayPractice1
             //  string firstIndex = ageOfStudentsInClass[0].ToString();
 
       */
-            string[] restaurantsInMall = { "Subway", "Saki", "Dunkin Donuts", "Red Lobster", "Chick Fil-A" };
-            Console.WriteLine(restaurantsInMall.Length);
+            /*  string[] restaurantsInMall = { "Subway", "Saki", "Dunkin Donuts", "Red Lobster", "Chick Fil-A" };
+              Console.WriteLine(restaurantsInMall.Length);
 
-            //For review
-            int[] myIntArrayAgain;
-            //Declare an array when I know the elements
-            char[] lettersInFirstName = { 'D', 'a', 'n', 'i', 'e', 'l' };
-            //Declare and initialize an array when I DON'T know the elements
-            string[] variableName = new string[42];
+              //For review
+              int[] myIntArrayAgain;
+              //Declare an array when I know the elements
+              char[] lettersInFirstName = { 'D', 'a', 'n', 'i', 'e', 'l' };
+              //Declare and initialize an array when I DON'T know the elements
+              string[] variableName = new string[42];
 
-            //To practice using.Length, create a char array of the letters in your middle name
-            //..and print the number of car's to the console.'
-            //  char middleName;
-            // char[] middleName = { 'F', 'A', 'I', 'T', 'H' };
-            // Console.WriteLine(middleName.Length);
-            // char[] middleName1 = new char[5];
-            // Console.WriteLine(middleName1.Length);
+              //To practice using.Length, create a char array of the letters in your middle name
+              //..and print the number of car's to the console.'
+              //  char middleName;
+              // char[] middleName = { 'F', 'A', 'I', 'T', 'H' };
+              // Console.WriteLine(middleName.Length);
+              // char[] middleName1 = new char[5];
+              // Console.WriteLine(middleName1.Length);
 
-            //Declare and initialize a string array.
-            //using the Length property, print the Second to last element in the array.
+              //Declare and initialize a string array.
+              //using the Length property, print the Second to last element in the array.
 
-            string[] fruitLoops = { "green", "purple", "Yellow", "orange", "Blue" };
-            Console.WriteLine(fruitLoops.Length);
-            Console.WriteLine(fruitLoops[3]);
-            //  Console.WriteLine(fruitLoops.Length - 1);
-            //  Console.WriteLine(fruitLoops[numRest - 2);
-            //Length is not 0 index
-            Console.WriteLine(fruitLoops[fruitLoops.Length - 2]);
-            //build error
-            //run time error.
-            //IndexOf is a method used to search an array for a specified value and returns
-            //the index position of the first matching value found.
+              string[] fruitLoops = { "green", "purple", "Yellow", "orange", "Blue" };
+              Console.WriteLine(fruitLoops.Length);
+              Console.WriteLine(fruitLoops[3]);
+              //  Console.WriteLine(fruitLoops.Length - 1);
+              //  Console.WriteLine(fruitLoops[numRest - 2);
+              //Length is not 0 index
+              Console.WriteLine(fruitLoops[fruitLoops.Length - 2]);
+              //build error
+              //run time error.
+              //IndexOf is a method used to search an array for a specified value and returns
+              //the index position of the first matching value found.
 
-            int[] bestYearsEver = { 1985, 1999, 1991, 2000, 1985 };
-            Console.WriteLine(Array.IndexOf(bestYearsEver,1985));
-            //LastIndexOf is a method used to search an array for a specified value and returns
-            //the index position of the Last matching value found.
-            Console.WriteLine(Array.LastIndexOf(bestYearsEver, 1985));
+              int[] bestYearsEver = { 1985, 1999, 1991, 2000, 1985 };
+              Console.WriteLine(Array.IndexOf(bestYearsEver,1985));
+              //LastIndexOf is a method used to search an array for a specified value and returns
+              //the index position of the Last matching value found.
+              Console.WriteLine(Array.LastIndexOf(bestYearsEver, 1985));
+
+              //Reverse Method
+              int[] palindromeNumbers = { 1, 2, 3, 4, 5, 6, 7 };
+              Console.WriteLine(palindromeNumbers[0]);
+              Console.WriteLine(palindromeNumbers[2]);
+              Array.Reverse(palindromeNumbers);
+              Console.WriteLine(palindromeNumbers[0]);
+              Console.WriteLine(palindromeNumbers[2]);
+              //Sort
+              // will sort numbers in an array form lowest to highest
+              //will sort char's and strings in alphabetical order from a-Z
+
+              string[] powerRangers = { "Green", "Yellow", "Pink", "Blue", "Red", "Black" ,"black"};
+              Console.WriteLine(powerRangers[0]);
+              Array.Sort(powerRangers);
+              Console.WriteLine(powerRangers[0]);
+              string[] characters = { $"!,@,$,%,*" };*/
+
+
+
 
             //Reverse Method
-            int[] palindromeNumbers = { 1, 2, 3, 4, 5, 6, 7 };
-            Console.WriteLine(palindromeNumbers[0]);
-            Array.Reverse(palindromeNumbers);
-            Console.WriteLine(palindromeNumbers[0]);
+            // Array.Reverse(palindromeNumbers);
+            // Console.WriteLine(palindromeNumbers[0]);
+
+
+            //Sort
+            // Array.Sort(powerRangers);
+            // Console.WriteLine(powerRangers[0]);
+
+
+            //LastIndexOf
+            // Console.WriteLine(Array.LastIndexOf(bestYearsEver, 1985));
+
+
+            // IndexOf
+            //Console.WriteLine(Array.IndexOf(bestYearsEver, 1985));
+
+
+            //Declare and initialize a string array of first names
+            string[] Name = { "Hope", "Faith", "Joy", "Mercy" };
+            //choose a name to find and print the index of.
+            //Print Joy which is at the index of 2\
+            Console.WriteLine(Name[Name.Length - 2]);
+            Console.WriteLine(Array.IndexOf(Name, "Joy"));
+            //  Create an array of lucky numbers. 
+            //Each number should repeat at least once.Choose a lucky number, find and print the last index of it.
+            int[] LuckyNumber = { 7, 7, 7, 6, 6, 6, 3 };
+            Console.WriteLine(Array.IndexOf(LuckyNumber, 7));
 
 
         }
